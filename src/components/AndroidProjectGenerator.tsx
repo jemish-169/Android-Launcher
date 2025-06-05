@@ -163,7 +163,7 @@ const AndroidProjectGenerator = () => {
       formData.append('file', jsonBlob, 'android-project-config.json');
 
       // Send request to API
-      const response = await fetch('http://192.168.0.90:8000/generate', {
+      const response = await fetch(`${process.env.VITE_APP_BE_URL}/generate`, {
         method: 'POST',
         body: formData,
       });
