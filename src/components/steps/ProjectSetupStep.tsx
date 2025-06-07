@@ -78,7 +78,7 @@ const ProjectSetupStep = ({ config, updateConfig }: ProjectSetupStepProps) => {
       key: 'localStorage' as keyof ProjectConfig,
       options: [
         { value: 'datastore', label: 'Jetpack DataStore', description: 'Modern preferences' },
-        { value: 'sharedpreferences', label: 'SharedPreferences', description: 'Simple key-value' },
+        { value: 'shared-preferences', label: 'SharedPreferences', description: 'Simple key-value' },
         { value: 'none', label: 'None', description: 'No local storage' }
       ],
       handler: (value: string) => updateConfig({ localStorage: value as any })

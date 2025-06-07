@@ -16,7 +16,7 @@ export interface ProjectConfig {
   networking: 'retrofit' | 'ktor' | 'none';
   serialization: 'gson' | 'moshi' | 'kotlinx-serialization' | 'none';
   dependencyInjection: 'hilt' | 'koin' | 'none';
-  localStorage: 'datastore' | 'sharedpreferences' | 'none';
+  localStorage: 'datastore' | 'shared-preferences' | 'none';
   enableRoom: boolean;
   uiTheme: 'material' | 'material3' | 'material3-expressive';
   permissions: string[];
@@ -163,7 +163,7 @@ const AndroidProjectGenerator = () => {
       formData.append('file', jsonBlob, 'android-project-config.json');
 
       // Send request to API
-      const response = await fetch(`${process.env.VITE_APP_BE_URL}/generate`, {
+      const response = await fetch(`${import.meta.env.VITE_APP_BE_URL}/generate`, {
         method: 'POST',
         body: formData,
       });
