@@ -1,7 +1,5 @@
 # Android Project Generator 🚀
 
-A powerful and customizable web-based Android boilerplate generator that allows developers to scaffold native Android projects tailored to their specific needs — all from a simple UI. 
-
 📦 Generates a downloadable `.zip` containing a fully functional Android Studio project with selected tools, architecture, and design.
 
 🌐 **Live Demo**: [android-launcher.netlify.app](https://android-launcher.netlify.app/)
